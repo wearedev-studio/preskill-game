@@ -1,6 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
+import ProtectedRoute from './components/ProtectedRoute'; // <-- ИМПОРТИРУЕМ ОХРАННИКА
+
 import RegisterPage from './pages/RegisterPage/RegisterPage';
 import LoginPage from './pages/LoginPage/LoginPage';
 import ProfilePage from './pages/ProfilePage/ProfilePage';
@@ -8,6 +10,7 @@ import FindGamePage from './pages/FindGamePage/FindGamePage';
 import GamePage from './pages/GamePage/GamePage';
 import ResetPasswordPage from './pages/ResetPasswordPage/ResetPasswordPage';
 import OfflineGamePage from './pages/OfflineGamePage/OfflineGamePage';
+import SettingsPage from './pages/SettingsPage/SettingsPage';
 
 import OnlineGamePage from './pages/OnlineGamePage/OnlineGamePage';
 
@@ -23,10 +26,14 @@ function App() {
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/reset-password" element={<ResetPasswordPage />} />
-          <Route path="/profile" element={<ProfilePage />} />
-          <Route path="/game/:gameId" element={<OnlineGamePage />} />
-          <Route path="/find-game" element={<FindGamePage />} />
-          <Route path="/game/offline" element={<OfflineGamePage />} />
+          <Route element={<ProtectedRoute />}>
+            <Route path="/profile" element={<ProfilePage />} />
+            <Route path="/settings" element={<SettingsPage />} />
+            <Route path="/game/:gameId" element={<OnlineGamePage />} />
+            <Route path="/find-game" element={<FindGamePage />} />
+            <Route path="/game/offline" element={<OfflineGamePage />} />
+          </Route>
+
           <Route path="/" element={
             <PageContainer>
               <p>Начните новую игру через меню навигации.</p>

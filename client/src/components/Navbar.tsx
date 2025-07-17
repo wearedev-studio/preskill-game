@@ -67,6 +67,8 @@ const Navbar: React.FC = () => {
                     <>
                         <UserInfo>Баланс: ${user.balance}</UserInfo>
                         <NavLink to="/profile">Профиль</NavLink>
+                        <NavLink to="/settings">Настройки</NavLink> {/* <-- ДОБАВЛЯЕМ ССЫЛКУ */}
+
                         {/* <NavLink to="/find-game">Начать игру</NavLink> */}
                         <LogoutButton onClick={handleLogout}>Выйти</LogoutButton>
                     </>

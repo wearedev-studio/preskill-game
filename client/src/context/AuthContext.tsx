@@ -11,9 +11,8 @@ interface User {
 
 interface AuthContextType {
   user: User | null;
-
+  isLoading: boolean; // <-- НОВОЕ СВОЙСТВО
   login: (userData: User) => void;
-
   logout: () => void;
 }
 
@@ -21,12 +20,19 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const [user, setUser] = useState<User | null>(null);
+  const [isLoading, setIsLoading] = useState(true); // <-- НОВОЕ СОСТОЯНИЕ
 
   useEffect(() => {
-    const storedUser = localStorage.getItem('userInfo');
-
-    if (storedUser) {
-      setUser(JSON.parse(storedUser));
+    try {
+      const storedUser = localStorage.getItem('userInfo');
+      if (storedUser) {
+        setUser(JSON.parse(storedUser));
+      }
+    } catch (error) {
+      console.error("Failed to parse user info from localStorage", error);
+    } finally {
+      // В любом случае (нашли пользователя или нет), загрузка завершена
+      setIsLoading(false); // <-- УСТАНАВЛИВАЕМ В FALSE
     }
   }, []);
 
@@ -43,7 +49,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   };
 
   return (
-    <AuthContext.Provider value={{ user, login, logout }}>
+    <AuthContext.Provider value={{ user, isLoading, login, logout }}>
       {children}
     </AuthContext.Provider>
   );
@@ -51,10 +57,6 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
 
 export const useAuth = () => {
   const context = useContext(AuthContext);
-
-  if (context === undefined) {
-    throw new Error('useAuth must be used within an AuthProvider');
-  }
-  
+  if (context === undefined) throw new Error('useAuth must be used within an AuthProvider');
   return context;
 };

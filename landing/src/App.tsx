@@ -8,7 +8,31 @@ import TicTacToePage from './pages/TicTacToePage';
 import AboutPage from './pages/AboutPage';
 
 import ContactPage from './pages/ContactPage';
-
+import AMLPage from './pages/AMLPage';
+import KYCPolicy from './pages/KYCPolicyPage';
+import TermsOfService from './pages/TermsOfServicePage';
+import PrivacyPolicy from './pages/PrivacyPolicyPage';
+import PaymentPolicy from './pages/PaymentPolicyPage';
+import GameRules from './pages/GameRulesPage';
+import ResponsibleGambling from './pages/ResponsibleGamblingPage';
+import Disclaimer from './pages/DisclaimerPage';
+import CookiePolicy from './pages/CookiePolicyPage';
+import LegalInformation from './pages/LegalInformationPage';
+// LegalInformation
+// CookiePolicy
+// Disclaimer
+// ResponsibleGambling
+// GameRules
+// PaymentPolicy
+// PrivacyPolicy
+// TermsOfService
+// KYCPolicy
+// /payment-policy
+// Terms of Service
+// Privacy Policy
+// Cookie Policy
+// Responsible Gaming
+// 1. Anti-Money Laundering (AML) Policy
 
 function App() {
   return (
@@ -22,6 +46,16 @@ function App() {
           <Route path="/tic-tac-toe" element={<TicTacToePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/aml" element={<AMLPage />} />
+          <Route path="/kyc" element={<KYCPolicy />} />
+          <Route path="/terms" element={<TermsOfService />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/payment-policy" element={<PaymentPolicy />} />
+          <Route path="/game-rules" element={<GameRules />} />
+          <Route path="/gambling-policy" element={<ResponsibleGambling />} />
+          <Route path="/disclaimer" element={<Disclaimer />} />
+          <Route path="/cookies" element={<CookiePolicy />} />
+          <Route path="/legal" element={<LegalInformation />} />
         </Routes>
       </div>
     </Router>

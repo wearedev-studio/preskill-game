@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Users, Trophy, Shield, Globe, Heart, Star } from 'lucide-react';
 
 const AboutPage: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const teamMembers = [
     {
       name: 'Sarah Chen',
@@ -72,7 +76,7 @@ const AboutPage: React.FC = () => {
             <div className="absolute top-20 left-20 w-64 h-64 bg-yellow-400 rounded-full blur-3xl"></div>
             <div className="absolute bottom-20 right-20 w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
           </div>
-          
+
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">
@@ -100,7 +104,7 @@ const AboutPage: React.FC = () => {
                   Since our founding in 2020, we've been dedicated to building a secure, transparent, and exciting environment where players can test their skills against others and earn real rewards for their strategic mastery.
                 </p>
               </div>
-              
+
               <div className="grid grid-cols-2 gap-6">
                 <div className="bg-gray-900 rounded-xl p-6 border border-gray-700">
                   <div className="text-3xl font-bold text-yellow-400 mb-2">50K+</div>
@@ -129,7 +133,7 @@ const AboutPage: React.FC = () => {
             <h2 className="text-4xl font-bold mb-12 text-center bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">
               Our Values
             </h2>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {values.map((value, index) => (
                 <div key={index} className="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-yellow-500 transition-all duration-300 text-center">
@@ -150,12 +154,12 @@ const AboutPage: React.FC = () => {
             <h2 className="text-4xl font-bold mb-12 text-center bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">
               Meet Our Team
             </h2>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {teamMembers.map((member, index) => (
                 <div key={index} className="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-yellow-500 transition-all duration-300">
-                  <img 
-                    src={member.image} 
+                  <img
+                    src={member.image}
                     alt={member.name}
                     className="w-full h-64 object-cover"
                   />
@@ -176,10 +180,10 @@ const AboutPage: React.FC = () => {
             <h2 className="text-4xl font-bold mb-12 text-center bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">
               Our Journey
             </h2>
-            
+
             <div className="relative">
               <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-yellow-500 to-yellow-600"></div>
-              
+
               <div className="space-y-12">
                 {milestones.map((milestone, index) => (
                   <div key={index} className={`flex items-center ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
@@ -190,11 +194,11 @@ const AboutPage: React.FC = () => {
                         <p className="text-gray-400">{milestone.description}</p>
                       </div>
                     </div>
-                    
+
                     <div className="relative z-10">
                       <div className="w-4 h-4 bg-yellow-500 rounded-full border-4 border-gray-900"></div>
                     </div>
-                    
+
                     <div className="w-1/2"></div>
                   </div>
                 ))}
@@ -210,7 +214,7 @@ const AboutPage: React.FC = () => {
               <Heart className="w-16 h-16 text-yellow-500 mx-auto mb-6" />
               <h2 className="text-4xl font-bold mb-6 text-white">Join Our Community</h2>
               <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
-                Become part of a growing community of strategic gamers from around the world. 
+                Become part of a growing community of strategic gamers from around the world.
                 Whether you're a casual player or a competitive champion, there's a place for you at GameMaster Arena.
               </p>
               <button className="px-8 py-4 bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-semibold rounded-lg hover:from-yellow-600 hover:to-yellow-700 transform hover:scale-105 transition-all duration-200">

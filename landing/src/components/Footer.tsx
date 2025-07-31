@@ -18,16 +18,19 @@ const Footer: React.FC = () => {
       { name: 'Contact', href: '/contact' }
     ],
     support: [
-      { name: 'Help Center', href: '/help' },
-      { name: 'Tournament Rules', href: '/tournament-rules' },
-      { name: 'Fair Play', href: '/fair-play' },
+      { name: 'Game Rules', href: '/game-rules' },
+      { name: 'Responsible Gambling Policy', href: '/gambling-policy' },
+      { name: 'Disclaimer', href: '/disclaimer' },
       { name: 'Security', href: '/security' }
     ],
-    legal: [
+    legal: [              
+      { name: 'Anti-Money Laundering (AML) Policy', href: '/aml' },
+      { name: 'Know Your Customer (KYC) Policy', href: '/kyc' },
       { name: 'Terms of Service', href: '/terms' },
       { name: 'Privacy Policy', href: '/privacy' },
       { name: 'Cookie Policy', href: '/cookies' },
-      { name: 'Responsible Gaming', href: '/responsible-gaming' }
+      { name: 'Payment and Refund Policy', href: '/payment-policy' },
+      { name: 'Legal Information', href: '/legal' }
     ]
   };
 

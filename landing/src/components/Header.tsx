@@ -80,12 +80,12 @@ const Header: React.FC = () => {
                 Contact
               </Link>
               <div className="flex flex-col gap-2 pt-4 border-t border-gray-800">
-                <button className="px-4 py-2 text-gray-300 hover:text-white transition-colors text-left">
+                <a href='https://cabinetsklg.koltech.dev/login' className="d-flex px-4 py-2 text-gray-300 hover:text-white transition-colors text-center">
                   Sign In
-                </button>
-                <button className="px-4 py-2 bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-semibold rounded-lg hover:from-yellow-600 hover:to-yellow-700 transition-all">
+                </a>
+                <a href='https://cabinetsklg.koltech.dev/register' className="d-flex px-4 py-2 bg-gradient-to-r from-yellow-500 to-yellow-600 text-black text-center font-semibold rounded-lg hover:from-yellow-600 hover:to-yellow-700 transition-all">
                   Sign Up
-                </button>
+                </a>
               </div>
             </div>
           </div>

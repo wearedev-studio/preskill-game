@@ -18,21 +18,7 @@ import ResponsibleGambling from './pages/ResponsibleGamblingPage';
 import Disclaimer from './pages/DisclaimerPage';
 import CookiePolicy from './pages/CookiePolicyPage';
 import LegalInformation from './pages/LegalInformationPage';
-// LegalInformation
-// CookiePolicy
-// Disclaimer
-// ResponsibleGambling
-// GameRules
-// PaymentPolicy
-// PrivacyPolicy
-// TermsOfService
-// KYCPolicy
-// /payment-policy
-// Terms of Service
-// Privacy Policy
-// Cookie Policy
-// Responsible Gaming
-// 1. Anti-Money Laundering (AML) Policy
+
 
 function App() {
   return (

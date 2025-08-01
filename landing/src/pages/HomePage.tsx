@@ -5,10 +5,12 @@ import Tournaments from '../components/Tournaments';
 import Features from '../components/Features';
 import HowItWorks from '../components/HowItWorks';
 import Footer from '../components/Footer';
+import Header from '../components/Header';
 
 const HomePage: React.FC = () => {
   return (
     <>
+      <Header />
       <Hero />
       <GameSelection />
       <Tournaments />

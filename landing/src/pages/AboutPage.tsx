@@ -36,7 +36,7 @@ const AboutPage: React.FC = () => {
   ];
 
   const milestones = [
-    { year: '2020', event: 'GameMaster Arena founded', description: 'Started with a vision to revolutionize online board gaming' },
+    { year: '2020', event: 'Skill Game founded', description: 'Started with a vision to revolutionize online board gaming' },
     { year: '2021', event: 'First tournament launched', description: 'Hosted our inaugural chess championship with $10,000 prize pool' },
     { year: '2022', event: '10,000 players milestone', description: 'Reached our first major player milestone across all games' },
     { year: '2023', event: '$1M in prizes awarded', description: 'Distributed over one million dollars to winning players' },
@@ -80,7 +80,7 @@ const AboutPage: React.FC = () => {
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">
-                About GameMaster Arena
+                About Skill Game
               </h1>
               <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto">
                 We're revolutionizing competitive board gaming by creating the world's premier platform for skill-based tournaments with real money prizes.
@@ -215,11 +215,11 @@ const AboutPage: React.FC = () => {
               <h2 className="text-4xl font-bold mb-6 text-white">Join Our Community</h2>
               <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
                 Become part of a growing community of strategic gamers from around the world.
-                Whether you're a casual player or a competitive champion, there's a place for you at GameMaster Arena.
+                Whether you're a casual player or a competitive champion, there's a place for you at Skill Game.
               </p>
-              <button className="px-8 py-4 bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-semibold rounded-lg hover:from-yellow-600 hover:to-yellow-700 transform hover:scale-105 transition-all duration-200">
+              <a href='https://cabinetsklg.koltech.dev/register' className="px-8 py-4 bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-semibold rounded-lg hover:from-yellow-600 hover:to-yellow-700 transform hover:scale-105 transition-all duration-200">
                 Start Playing Today
-              </button>
+              </a>
             </div>
           </div>
         </section>

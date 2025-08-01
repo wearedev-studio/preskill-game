@@ -12,7 +12,7 @@ const Header: React.FC = () => {
           <Link to="/" className="flex items-center gap-2">
             <Crown className="w-8 h-8 text-yellow-500" />
             <span className="text-xl font-bold bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">
-              GameMaster Arena
+              Skill Game
             </span>
           </Link>
 
@@ -38,12 +38,12 @@ const Header: React.FC = () => {
           </nav>
 
           <div className="hidden md:flex items-center gap-4">
-            <button className="px-4 py-2 text-gray-300 hover:text-white transition-colors">
+            <a href='https://cabinetsklg.koltech.dev/login' className="px-4 py-2 text-gray-300 hover:text-white transition-colors">
               Sign In
-            </button>
-            <button className="px-4 py-2 bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-semibold rounded-lg hover:from-yellow-600 hover:to-yellow-700 transition-all">
+            </a>
+            <a href='https://cabinetsklg.koltech.dev/register' className="px-4 py-2 bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-semibold rounded-lg hover:from-yellow-600 hover:to-yellow-700 transition-all">
               Sign Up
-            </button>
+            </a>
           </div>
 
           <button

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { ArrowRight, Crown, Users, DollarSign } from 'lucide-react';
 
 const GameSelection: React.FC = () => {
@@ -16,7 +17,7 @@ const GameSelection: React.FC = () => {
       id: 'checkers',
       title: 'Checkers',
       description: 'Classic board game with simple rules but deep strategic gameplay.',
-      image: 'https://images.pexels.com/photos/1040157/pexels-photo-1040157.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_67a99e7d6bcf180eb89c36da_67a99e866bcf180eb89c3b0d/scale_1200',
       players: '8,567',
       prize: '$25,000',
       difficulty: 'Intermediate'
@@ -25,7 +26,7 @@ const GameSelection: React.FC = () => {
       id: 'backgammon',
       title: 'Backgammon',
       description: 'Ancient game combining strategy and luck. Race your pieces to victory.',
-      image: 'https://images.pexels.com/photos/1040157/pexels-photo-1040157.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://www.superbetinyeniadresi.net/wp-content/uploads/2020/10/Tavla-Oynanan-Bahis-Siteleri.jpg',
       players: '6,892',
       prize: '$30,000',
       difficulty: 'Advanced'
@@ -34,7 +35,7 @@ const GameSelection: React.FC = () => {
       id: 'tic-tac-toe',
       title: 'Tic-Tac-Toe',
       description: 'Quick matches with instant rewards. Perfect for beginners and pros alike.',
-      image: 'https://images.pexels.com/photos/1040157/pexels-photo-1040157.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://media.printables.com/media/prints/996434/images/7583870_392cdefa-1c3e-4318-9225-1bc12ed72a34_47a94660-c70d-4554-8a25-288442c379ea/tictac-2_configuration_no-configuration.png',
       players: '12,445',
       prize: '$5,000',
       difficulty: 'Beginner'
@@ -99,11 +100,11 @@ const GameSelection: React.FC = () => {
                   </div>
                 </div>
                 
-                <button className="w-full bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-semibold py-3 rounded-lg hover:from-yellow-600 hover:to-yellow-700 transition-all duration-200 flex items-center justify-center gap-2 group">
+                <a href='https://cabinetsklg.koltech.dev/register' className="w-full bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-semibold py-3 rounded-lg hover:from-yellow-600 hover:to-yellow-700 transition-all duration-200 flex items-center justify-center gap-2 group">
                   <Crown className="w-4 h-4" />
-                  Play Now
+                    Play Now
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </button>
+                </a>
               </div>
             </div>
           ))}

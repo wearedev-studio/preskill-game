@@ -33,7 +33,7 @@ const ContactPage: React.FC = () => {
       icon: Mail,
       title: 'Email Support',
       description: 'Get help with your account, games, or technical issues',
-      contact: 'support@gamemasterarena.com',
+      contact: 'support@skillgame.com',
       response: 'Response within 24 hours'
     },
     {
@@ -120,91 +120,6 @@ const ContactPage: React.FC = () => {
         <section className="py-20 bg-gray-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-              {/* Contact Form */}
-              <div className="bg-gray-800 rounded-xl p-8 border border-gray-700">
-                <h2 className="text-3xl font-bold mb-6 text-white">Send us a Message</h2>
-
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
-                        Full Name
-                      </label>
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 transition-colors"
-                        placeholder="Your full name"
-                        required
-                      />
-                    </div>
-
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
-                        Email Address
-                      </label>
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 transition-colors"
-                        placeholder="your@email.com"
-                        required
-                      />
-                    </div>
-                  </div>
-
-                  <div>
-                    <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-2">
-                      Subject
-                    </label>
-                    <select
-                      id="subject"
-                      name="subject"
-                      value={formData.subject}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white focus:outline-none focus:border-blue-500 transition-colors"
-                      required
-                    >
-                      <option value="">Select a topic</option>
-                      {departments.map((dept) => (
-                        <option key={dept.value} value={dept.value}>
-                          {dept.label}
-                        </option>
-                      ))}
-                    </select>
-                  </div>
-
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
-                      Message
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      rows={6}
-                      className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 transition-colors resize-none"
-                      placeholder="Please describe your inquiry in detail..."
-                      required
-                    ></textarea>
-                  </div>
-
-                  <button
-                    type="submit"
-                    className="w-full px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-lg hover:from-blue-600 hover:to-purple-700 transform hover:scale-105 transition-all duration-200 flex items-center justify-center gap-2"
-                  >
-                    <Send className="w-5 h-5" />
-                    Send Message
-                  </button>
-                </form>
-              </div>
 
               {/* Contact Information */}
               <div className="space-y-8">
@@ -248,7 +163,7 @@ const ContactPage: React.FC = () => {
                         <h4 className="font-semibold text-white mb-1">Security Issues</h4>
                         <p className="text-gray-400">
                           For security-related concerns:<br />
-                          security@gamemasterarena.com<br />
+                          security@skillgame.com<br />
                           Available 24/7
                         </p>
                       </div>

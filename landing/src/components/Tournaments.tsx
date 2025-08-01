@@ -44,7 +44,7 @@ const Tournaments: React.FC = () => {
       participants: '3,456',
       startDate: '2024-02-08',
       duration: '1 day',
-      status: 'ended',
+      status: 'live',
       featured: false
     }
   ];
@@ -131,7 +131,7 @@ const Tournaments: React.FC = () => {
                 </div>
               </div>
               
-              <button className={`w-full py-3 rounded-lg font-semibold transition-all duration-200 ${
+              <a href='https://cabinetsklg.koltech.dev/register' className={`w-full flex justify-center py-3 rounded-lg font-semibold transition-all duration-200 ${
                 tournament.status === 'live' 
                   ? 'bg-gradient-to-r from-green-500 to-green-600 text-white hover:from-green-600 hover:to-green-700' 
                   : tournament.status === 'upcoming'
@@ -139,7 +139,7 @@ const Tournaments: React.FC = () => {
                   : 'bg-gray-600 text-gray-300 cursor-not-allowed'
               }`}>
                 {tournament.status === 'live' ? 'Join Now' : tournament.status === 'upcoming' ? 'Register' : 'View Results'}
-              </button>
+              </a>
             </div>
           ))}
         </div>

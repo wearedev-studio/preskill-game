@@ -1,31 +1,27 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Youtube } from 'lucide-react';
-import links from '../../links.json';
 
 const Footer: React.FC = () => {
   const footerLinks = {
     games: [
-      { name: 'Chess', href: `${links.PROFILE}` },
-      { name: 'Checkers', href: `${links.PROFILE}` },
-      { name: 'Backgammon', href: `${links.PROFILE}` },
-      { name: 'Tic-Tac-Toe', href: `${links.PROFILE}` }
+      { name: 'Chess', href: `/chess` },
+      { name: 'Checkers', href: `/checkers` },
+      { name: 'Backgammon', href: `/backgammon` },
+      { name: 'Tic-Tac-Toe', href: `/tic-tac-toe` }
     ],
     company: [
       { name: 'About Us', href: '/about' },
-      { name: 'Careers', href: '/careers' },
-      { name: 'Press', href: '/press' },
       { name: 'Contact', href: '/contact' }
     ],
     support: [
       { name: 'Game Rules', href: '/game-rules' },
       { name: 'Responsible Gambling Policy', href: '/gambling-policy' },
-      { name: 'Disclaimer', href: '/disclaimer' },
-      { name: 'Security', href: '/security' }
+      { name: 'Disclaimer', href: '/disclaimer' }
     ],
     legal: [              
-      { name: 'Anti-Money Laundering (AML) Policy', href: '/aml' },
-      { name: 'Know Your Customer (KYC) Policy', href: '/kyc' },
+      { name: 'AML Policy', href: '/aml' },
+      { name: 'KYC Policy', href: '/kyc' },
       { name: 'Terms of Service', href: '/terms' },
       { name: 'Privacy Policy', href: '/privacy' },
       { name: 'Cookie Policy', href: '/cookies' },

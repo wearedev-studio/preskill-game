@@ -50,7 +50,6 @@ const Footer: React.FC = () => {
             <p className="text-gray-400 mb-6 leading-relaxed">
               The premier destination for competitive board game tournaments. Join millions of players worldwide and compete for real money prizes.
             </p>
-            
             <div className="space-y-2">
               <div className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-yellow-500" />
@@ -142,6 +141,10 @@ const Footer: React.FC = () => {
                 </a>
               ))}
             </div>
+          </div>
+          <div className="mt-12 pt-8" style={{ display: "flex", justifyContent: "center" }}>
+              <img src='/Visa_Brandmark_White_RGB_2021.png' style={{ width: "100px", objectFit: "contain" }} />
+              <img src='/mastercard_circles_92px_2x.png' style={{ width: "100px", objectFit: "contain" }} />
           </div>
         </div>
       </div>

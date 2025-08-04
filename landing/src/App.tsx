@@ -6,6 +6,8 @@ import CheckersPage from './pages/CheckersPage';
 import BackgammonPage from './pages/BackgammonPage';
 import TicTacToePage from './pages/TicTacToePage';
 import AboutPage from './pages/AboutPage';
+// import CookieBanner from './components/CookieBanner';
+
 
 import ContactPage from './pages/ContactPage';
 import AMLPage from './pages/AMLPage';
@@ -18,7 +20,10 @@ import ResponsibleGambling from './pages/ResponsibleGamblingPage';
 import Disclaimer from './pages/DisclaimerPage';
 import CookiePolicy from './pages/CookiePolicyPage';
 import LegalInformation from './pages/LegalInformationPage';
+import GDPRPage from './pages/GDPRPage';
 
+import { CookieBanner } from './components/CookieBanner';
+// import { DemoControls } from './components/DemoControls';
 
 function App() {
   return (
@@ -42,7 +47,10 @@ function App() {
           <Route path="/disclaimer" element={<Disclaimer />} />
           <Route path="/cookies" element={<CookiePolicy />} />
           <Route path="/legal" element={<LegalInformation />} />
+          <Route path="/GDPR" element={<GDPRPage />} />
         </Routes>
+        {/* <DemoControls /> */}
+        <CookieBanner />
       </div>
     </Router>
   );

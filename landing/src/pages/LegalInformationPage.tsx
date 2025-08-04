@@ -21,11 +21,10 @@ const LegalInformation: React.FC = () => {
                             <h2 className="text-2xl font-bold mb-6 mt-6 bg-white from-blue-200 to-purple-300 bg-clip-text text-transparent">Company Details</h2>
                             <h3 className="text-1xl font-bold mb-6 mt-6 bg-white from-blue-200 to-purple-300 bg-clip-text text-transparent">Corporate Information</h3>
                             <ul>
-                                <li><strong>Company Name:</strong> Skill Game Limited</li>
-                                <li><strong>Registration Number:</strong> [Registration Number]</li>
-                                <li><strong>Incorporation Date:</strong> [Date]</li>
-                                <li><strong>Registered Office:</strong> [Complete Address]</li>
-                                <li><strong>Principal Place of Business:</strong> [Business Address]</li>
+                                <li><strong>Company Name:</strong> UNITRYSE HOLDING LTD</li>
+                                <li><strong>Registration Number:</strong> 474712</li>
+                                <li><strong>Incorporation Date:</strong> May 4, 2025</li>
+                                <li><strong>Registered Office:</strong> Archiepiskopou Makariou III, 84 Office 1 6017, Larnaca, Cyprus</li>
                             </ul>
 
                             <h3 className="text-1xl font-bold mb-6 mt-6 bg-white from-blue-200 to-purple-300 bg-clip-text text-transparent">Contact Information</h3>
@@ -34,33 +33,26 @@ const LegalInformation: React.FC = () => {
                                 <li><strong>Legal Inquiries:</strong> legal@skillgame.com</li>
                                 <li><strong>Compliance Officer:</strong> compliance@skillgame.com</li>
                                 <li><strong>Privacy Officer:</strong> privacy@skillgame.com</li>
-                                <li><strong>Phone:</strong> +1-[Phone Number]</li>
-                                <li><strong>Fax:</strong> +1-[Fax Number]</li>
                             </ul>
 
                             <h2 className="text-2xl font-bold mb-6 mt-6 bg-white from-blue-200 to-purple-300 bg-clip-text text-transparent">Licensing and Regulatory Compliance</h2>
                             <h3 className="text-1xl font-bold mb-6 mt-6 bg-white from-blue-200 to-purple-300 bg-clip-text text-transparent">Operating Licenses</h3>
                             <ul>
-                                <li><strong>[Jurisdiction] Gaming License:</strong> License Number [XXX-XXX-XXX]</li>
-                                <li><strong>Financial Services License:</strong> Regulated by [Regulatory Body]</li>
-                                <li><strong>Data Protection Registration:</strong> Registered with [Authority]</li>
                                 <li><strong>Anti-Money Laundering Compliance:</strong> Fully compliant with FATF standards</li>
                             </ul>
 
                             <h3 className="text-1xl font-bold mb-6 mt-6 bg-white from-blue-200 to-purple-300 bg-clip-text text-transparent">Regulatory Bodies</h3>
                             <ul>
-                                <li><strong>Primary Regulator:</strong> [Regulatory Authority Name]</li>
-                                <li><strong>Secondary Oversight:</strong> [Additional Regulatory Bodies]</li>
                                 <li><strong>Compliance Audits:</strong> Annual independent compliance reviews</li>
                                 <li><strong>Reporting Requirements:</strong> Monthly regulatory reporting</li>
                             </ul>
 
                             <h2 className="text-2xl font-bold mb-6 mt-6 bg-white from-blue-200 to-purple-300 bg-clip-text text-transparent">Governing Law and Jurisdiction</h2>
                             <h3 className="text-1xl font-bold mb-6 mt-6 bg-white from-blue-200 to-purple-300 bg-clip-text text-transparent">Applicable Law</h3>
-                            <p>These services and all related agreements are governed by the laws of [Jurisdiction], without regard to its conflict of law provisions. The application of the United Nations Convention on Contracts for the International Sale of Goods is expressly excluded.</p>
+                            <p>These services and all related agreements are governed by the laws of Cyprus, without regard to its conflict of law provisions. The application of the United Nations Convention on Contracts for the International Sale of Goods is expressly excluded.</p>
 
                             <h3 className="text-1xl font-bold mb-6 mt-6 bg-white from-blue-200 to-purple-300 bg-clip-text text-transparent">Jurisdiction</h3>
-                            <p>Any disputes arising out of or in connection with these services shall be subject to the exclusive jurisdiction of the courts located in [City, Country]. Users agree to submit to the personal jurisdiction of these courts.</p>
+                            <p>Any disputes arising out of or in connection with these services shall be subject to the exclusive jurisdiction of the courts located in Larnaca, Cyprus. Users agree to submit to the personal jurisdiction of these courts.</p>
 
                             <h2 className="text-2xl font-bold mb-6 mt-6 bg-white from-blue-200 to-purple-300 bg-clip-text text-transparent">Dispute Resolution</h2>
                             <h3 className="text-1xl font-bold mb-6 mt-6 bg-white from-blue-200 to-purple-300 bg-clip-text text-transparent">Alternative Dispute Resolution</h3>
@@ -68,7 +60,7 @@ const LegalInformation: React.FC = () => {
                             <ul>
                                 <li><strong>Internal Resolution:</strong> 30-day period for internal dispute resolution</li>
                                 <li><strong>Mediation:</strong> Voluntary mediation through certified mediators</li>
-                                <li><strong>Arbitration:</strong> Binding arbitration under [Arbitration Rules]</li>
+                                <li><strong>Arbitration:</strong> Binding arbitration under Cyprus</li>
                                 <li><strong>Court Proceedings:</strong> Final resort for unresolved disputes</li>
                             </ul>
 
@@ -101,7 +93,6 @@ const LegalInformation: React.FC = () => {
                             <h2 className="text-2xl font-bold mb-6 mt-6 bg-white from-blue-200 to-purple-300 bg-clip-text text-transparent">Financial Information</h2>
                             <h3 className="text-1xl font-bold mb-6 mt-6 bg-white from-blue-200 to-purple-300 bg-clip-text text-transparent">Banking Partners</h3>
                             <ul>
-                                <li><strong>Primary Banking Partner:</strong> [Bank Name and Details]</li>
                                 <li><strong>Payment Processing:</strong> Licensed payment service providers</li>
                                 <li><strong>Segregated Accounts:</strong> Player funds held in separate accounts</li>
                                 <li><strong>Audit Requirements:</strong> Annual financial audits by certified auditors</li>
@@ -116,13 +107,6 @@ const LegalInformation: React.FC = () => {
                             </ul>
 
                             <h2 className="text-2xl font-bold mb-6 mt-6 bg-white from-blue-200 to-purple-300 bg-clip-text text-transparent">Corporate Governance</h2>
-                            <h3 className="text-1xl font-bold mb-6 mt-6 bg-white from-blue-200 to-purple-300 bg-clip-text text-transparent">Board of Directors</h3>
-                            <ul>
-                                <li><strong>Chairman:</strong> [Name and Title]</li>
-                                <li><strong>CEO:</strong> [Name and Title]</li>
-                                <li><strong>CFO:</strong> [Name and Title]</li>
-                                <li><strong>Independent Directors:</strong> [Number] independent board members</li>
-                            </ul>
 
                             <h3 className="text-1xl font-bold mb-6 mt-6 bg-white from-blue-200 to-purple-300 bg-clip-text text-transparent">Committees</h3>
                             <ul>
@@ -136,7 +120,6 @@ const LegalInformation: React.FC = () => {
                             <h3 className="text-1xl font-bold mb-6 mt-6 bg-white from-blue-200 to-purple-300 bg-clip-text text-transparent">GDPR Compliance</h3>
                             <ul>
                                 <li><strong>Data Controller:</strong> Skill Game Limited</li>
-                                <li><strong>Data Protection Officer:</strong> [Name and Contact Information]</li>
                                 <li><strong>Privacy Impact Assessments:</strong> Regular DPIA conducted</li>
                                 <li><strong>Data Processing Agreements:</strong> Signed with all processors</li>
                             </ul>
@@ -235,7 +218,7 @@ const LegalInformation: React.FC = () => {
                             </ul>
 
                             <h2 className="text-2xl font-bold mb-6 mt-6 bg-white from-blue-200 to-purple-300 bg-clip-text text-transparent">Last Updated</h2>
-                            <p>This legal information was last updated on [Date] and is subject to regular review and updates as required by law, regulation, or corporate changes.</p>
+                            <p>This legal information was last updated on 1 Aug, 2025 and is subject to regular review and updates as required by law, regulation, or corporate changes.</p>
                             {/* ` }} /> */}
                         </div>
                     </div>
